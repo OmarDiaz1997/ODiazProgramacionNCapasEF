@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c609ddaca50b4f50899fa2c4ba70cf13" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Usuario" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Rol" Width="1.5" PointX="0.75" PointY="5.875" />
+        <AssociationConnector Association="ODiazProgramacionNCapasModel.FK_Usuario_Rol" />
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Colonia" Width="1.5" PointX="10.125" PointY="1.125" />
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Direccion" Width="1.5" PointX="12.375" PointY="1.5" />
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Estado" Width="1.5" PointX="5.625" PointY="1.25" />
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Municipio" Width="1.5" PointX="7.875" PointY="1.25" />
+        <EntityTypeShape EntityType="ODiazProgramacionNCapasModel.Pai" Width="1.5" PointX="3.375" PointY="1.375" />
+        <AssociationConnector Association="ODiazProgramacionNCapasModel.FK_Colonia_Municipio" />
+        <AssociationConnector Association="ODiazProgramacionNCapasModel.FK_Direccion_Colonia" />
+        <AssociationConnector Association="ODiazProgramacionNCapasModel.FK_Direccion_Usuario" />
+        <AssociationConnector Association="ODiazProgramacionNCapasModel.FK_Estado_Pais" />
+        <AssociationConnector Association="ODiazProgramacionNCapasModel.FK_Municipio_Estado" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
